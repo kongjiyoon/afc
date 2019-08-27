@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="ktds.afc.stadium.StadiumDTO" alias="stadium"/>
+		<typeAlias type="ktds.afc.stadium.StadiumSectionDTO" alias="stadiumsection"/>
+		<typeAlias type="ktds.afc.stadium.SectionSeatDTO" alias="sectionseat"/>
+	</typeAliases>
+	<mappers>
+		<mapper resource="mapper/stadium.xml"/>
+	</mappers>
+</configuration>

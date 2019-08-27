@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="ticketing/matchlist" extends="mainTemplate">
+		<put-attribute name="menu"
+			value="/WEB-INF/project/menu/ticketingmenu.jsp" />
+		<put-attribute name="content"
+			value="/WEB-INF/project/ticketing/ticketing.jsp" />
+	</definition>
+	<definition name="ticketing/stadium" extends="mainTemplate">
+		<put-attribute name="menu"
+			value="/WEB-INF/project/menu/ticketingmenu.jsp" />
+		<put-attribute name="content"
+			value="/WEB-INF/project/ticketing/ticketing2.jsp" />
+	</definition>
+	<definition name="ticketing/history" extends="mainTemplate">
+		<put-attribute name="menu"
+			value="/WEB-INF/project/menu/ticketingmenu.jsp" />
+		<put-attribute name="content"
+			value="/WEB-INF/project/ticketing/ticketing_history.jsp" />
+	</definition>
+	
+</tiles-definitions>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

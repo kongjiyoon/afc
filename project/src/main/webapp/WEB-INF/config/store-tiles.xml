@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- STORE -->
+	<definition name="store" extends="indexTemplate">
+		<put-attribute name="top" value="/WEB-INF/project/include/top.jsp" />
+		<put-attribute name="content" value="/WEB-INF/project/store/storelist.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/project/include/footer.jsp" />
+	</definition>
+
+	<definition name="store/read" extends="indexTemplate">
+		<put-attribute name="top" value="/WEB-INF/project/include/top.jsp" />
+		<put-attribute name="content" value="/WEB-INF/project/store/storeread.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/project/include/footer.jsp" />
+	</definition>
+
+
+</tiles-definitions>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
