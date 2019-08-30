@@ -45,9 +45,9 @@ public class StadiumController {
 			method=RequestMethod.GET,
 			produces="application/json;charset=utf-8")
 	public @ResponseBody List<SectionSeatDTO> ajaxstadium(String section){
-		System.out.println(section);
+		//System.out.println(section);
 		List<SectionSeatDTO> list = service.section2search(section);
-		System.out.println("contrlll-->"+list);
+		//System.out.println("contrlll-->"+list);
 		return list;
 	}
 	@RequestMapping(value="/ticketing/ajax_showstadiumimg.do",
@@ -55,7 +55,7 @@ public class StadiumController {
 			produces="application/json;charset=utf-8")
 	public @ResponseBody String ajaxshowstadiumimg(String section_name, String section){
 		String imgpath = service.showStadiumImg(section_name,section);
-		System.out.println(imgpath);
+		//System.out.println(imgpath);
 		return imgpath;
 	}
 }

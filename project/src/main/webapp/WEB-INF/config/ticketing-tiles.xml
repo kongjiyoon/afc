@@ -21,6 +21,12 @@
 		<put-attribute name="content"
 			value="/WEB-INF/project/ticketing/ticketing_history.jsp" />
 	</definition>
+	<definition name="ticketing/seatchoice" extends="mainTemplate">
+		<put-attribute name="menu"
+			value="/WEB-INF/project/menu/ticketingmenu.jsp" />
+		<put-attribute name="content"
+			value="/WEB-INF/project/ticketing/ticketing_seatchoice.jsp" />
+	</definition>
 	
 </tiles-definitions>
 

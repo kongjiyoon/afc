@@ -26,6 +26,7 @@ $(document).ready(function(){
 				data:{ "section" : section1},
 				dataType: "json",
 				success: function(jdata){
+					$target.empty();
 					$target.append("<option value=''>-구역선택-</option>");
 					if(jdata.length!=0){
 						$(jdata).each(function(i) {
@@ -75,17 +76,22 @@ $(document).ready(function(){
 			//alert("버튼눌림"+imgpath);
 			$("#stadiumimg").attr("src", imgpath);
 		});
-		
+		$("#nextbtn").click(function() {
+			location.href="/project/ticketing/seatchoice.do?section1="
+				+section1+"&section2="+section2
+		});
 	
 });	
 	
 </script>
 </head>
 <body>
+
+
 <div class="container" style="text-align: center;">
   <p>좌석 방향과 번호를 입력하시고 찾기를 클릭 하시면 하단 평면도에서 좌석의 위치를 찾으실 수 있습니다.</p> 
   	 방향&nbsp;&nbsp;
-			<form >
+		
 				<select name="section1"  id="section1">
 					<option value="">-방향선택-</option>
 					<option value="east">동쪽(E)</option>
@@ -93,14 +99,14 @@ $(document).ready(function(){
 					<option value="south">남쪽(S)</option>
 					<option value="north">북쪽(N)</option>
 				</select>
-			</form>
+			
   	&nbsp;&nbsp;&nbsp;&nbsp;
   	구역&nbsp;&nbsp;
-			<form >
+		
 				<select name="section2"  id="section2">
 					<option value="">-구역선택-</option>
 				</select>
-			</form>
+		
  
   	&nbsp;&nbsp;&nbsp;&nbsp;
   	<br/>
